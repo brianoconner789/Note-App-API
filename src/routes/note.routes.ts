@@ -1,4 +1,3 @@
-// src/routes/note.routes.ts
 import express from 'express';
 import * as noteController from '../controllers/note.controller';
 import { authenticateUser } from '../middleware/auth.middleware';

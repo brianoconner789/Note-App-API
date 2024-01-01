@@ -1,4 +1,3 @@
-// src/index.ts
 import express from 'express'
 import mongoose from 'mongoose'
 import bodyParser from 'body-parser'
@@ -20,7 +19,7 @@ app.use(bodyParser.json())
 
 // Connect to MongoDB using the new connection string format
 mongoose.connect('mongodb://localhost:27017/note-taking-app', {
-  connectTimeoutMS: 10000, // Optional: Set a timeout for the connection attempt
+  connectTimeoutMS: 10000,
 })
 
 app.use('/auth', authRoutes)
