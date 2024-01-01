@@ -1,4 +1,3 @@
-// src/routes/__tests__/auth.routes.test.ts
 import request from 'supertest';
 import express from 'express';
 import { MongoMemoryServer } from 'mongodb-memory-server';
@@ -6,7 +5,6 @@ import mongoose from 'mongoose';
 import authRoutes from '../auth.routes';
 import noteRoutes from '../note.routes'
 import { UserModel } from '../../models/user.model';
-import { NoteModel } from '../../models/note.model'; // Import the NoteModel
 
 // Setup an in-memory MongoDB server
 const mongod = new MongoMemoryServer();
